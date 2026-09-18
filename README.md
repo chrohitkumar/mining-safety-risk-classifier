@@ -4,7 +4,7 @@ A simple machine learning project that predicts whether an underground
 mining shift is likely to have a safety incident, using operational
 parameters a shift supervisor already has on hand.
 
-## 1. The problem (30-second pitch)
+## 1. The problem
 
 > "Mine safety incidents don't happen randomly — they cluster around specific
 > conditions: poor ventilation, high methane, old machinery, inexperienced crews.
