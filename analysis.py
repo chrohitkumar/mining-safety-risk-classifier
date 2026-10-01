@@ -1,19 +1,10 @@
-"""
-Mine Shift Safety Risk Prediction
-----------------------------------
-Predicts whether a given underground mining shift is likely to have a
-safety incident, based on operational parameters available before/during
-the shift. Goal: flag high-risk shifts in advance so supervisors can act
-(extra ventilation checks, reduced shift length, pairing with experienced
-workers, etc.)
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -27,8 +18,11 @@ from sklearn.metrics import (
 OUT = "/home/claude/mine_safety_risk"
 sns.set_style("whitegrid")
 
+# Create output directory if it doesn't exist
+os.makedirs(OUT, exist_ok=True)
+
 # ---------- 1. Load data ----------
-df = pd.read_csv(f"{OUT}/mine_shift_safety_data.csv")
+df = pd.read_csv("/content/mine_shift_safety_data (1).csv")
 print("Shape:", df.shape)
 print(df.describe().T)
 
