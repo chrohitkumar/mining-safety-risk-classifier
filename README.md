@@ -38,8 +38,7 @@ this kind of safety data (not 50/50, which would be a red flag if asked).
 ## 3. Approach
 
 1. **EDA** — correlation heatmap + bucketed incident-rate charts to confirm
-   the risk factors behave the way domain knowledge predicts (e.g. incident
-   rate rises sharply below ~5 m³/min ventilation).
+   the risk factors behave the way domain knowledge predicts.
 2. **Two models**, deliberately chosen to tell a complete story:
    - **Logistic Regression** — interpretable baseline, coefficients directly
      show direction/strength of each risk factor.
