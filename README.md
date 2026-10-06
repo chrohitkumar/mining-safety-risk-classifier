@@ -17,10 +17,7 @@ parameters a shift supervisor already has on hand.
 Since real incident data is confidential, I generated a **synthetic dataset
 of 2,000 shifts** using realistic domain relationships from mine ventilation
 and safety engineering (Hardy-Cross/Atkinson-style ventilation logic, methane
-accumulation, fatigue from shift length, workforce experience). This is a
-standard and honest approach for a portfolio project — be upfront in the
-interview that the data is synthetic but the *relationships* are grounded in
-real mining safety principles, not made up.
+accumulation, fatigue from shift length, workforce experience).
 
 **Features (9):**
 | Feature | Why it matters |
